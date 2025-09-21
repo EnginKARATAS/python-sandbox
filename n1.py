@@ -305,7 +305,7 @@ def main():
         return
     
     # Find folder
-    folder_path = r"P:\Automatic Upload\Samsung SM-A528B"
+    folder_path = r"D:\\"
     if not os.path.exists(folder_path):
         folder_path = os.getcwd()
         print(f"pCloud klasörü bulunamadı, mevcut klasör kullanılıyor: {folder_path}")
