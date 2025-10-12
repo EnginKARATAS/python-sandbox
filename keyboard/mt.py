@@ -1,13 +1,14 @@
-# otomatik_x_pyautogui.py
 import time
 import pyautogui
 
-print("5 saniye içinde başlayacak. İptal etmek için Ctrl+C yapın ve imleci güvenli bir yere alın.")
+print("5 saniye içinde başlayacak. Durdurmak için Ctrl+C tuşlarına bas.")
 time.sleep(5)
 
 try:
     while True:
-        pyautogui.press('x')
-        time.sleep(1)  # 1 saniye bekle
+        pyautogui.keyDown('shift')
+        pyautogui.press('2')   # Türkçe Q klavyede Shift+2 = "
+        pyautogui.keyUp('shift')
+        time.sleep(1)
 except KeyboardInterrupt:
     print("\nDurduruldu.")
